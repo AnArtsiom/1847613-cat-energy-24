@@ -1,0 +1,48 @@
+.nutrition__item {
+  margin-bottom: 20px;
+}
+
+.nutrition-item {
+  padding: 30px 20px 18px;
+  position: relative;
+  background-color: $white;
+  &::before {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    top: 24px;
+    left: 22px;
+    background-color: $basic-green;
+  }
+}
+
+.nutrition-item__title {
+  font-family: "Oswald Regular",sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 37px;
+  color: rgba(0, 0, 0, 1);
+  text-transform: uppercase;
+  margin-bottom: 29px;
+  padding-left: 72px;
+}
+
+.nutrition-item__descr {
+  color: $dark-grey;
+  padding-bottom: 23px;
+  border-bottom: 1px solid #d9d9d9;
+  margin-bottom: 15px;
+}
+
+.nutrition-item__link {
+  font-family: "Oswald Regular",sans-serif;
+  font-size: 16px;
+  line-height: 16px;
+  color: $black;
+  text-transform: uppercase;
+  display: block;
+}
+

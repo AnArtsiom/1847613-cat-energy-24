@@ -1,0 +1,22 @@
+// .header__container {
+//   background-color: $white;
+//   display: flex;
+//   justify-content: space-between;
+// }
+
+.main-nav {
+  display: flex;
+  flex-direction: column;
+}
+
+.menu__link {
+  font-family: "Oswald Medium",sans-serif;
+    font-size: 20px;
+    line-height: 20px;
+    color: $black;
+    text-transform: uppercase;
+    display: block;
+    padding: 22px 0 24px;
+    text-align: center;
+    border-top: 1px solid rgba(230, 230, 230, 1);
+}

@@ -1,0 +1,52 @@
+.program {
+  position: relative;
+  padding: 27px 15px 20px;
+  &::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 320px;
+    height: 304px;
+    background-color: #68b738;
+    background-image: url(../../img/index/index-background.jpg);
+  }
+}
+.program__title {
+  color: $white;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.program__text {
+  font-family: Oswald;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 14px;
+  text-transform: uppercase;
+  text-align: center;
+  color: $white;
+  margin-bottom: 29px;
+}
+
+.program__img {
+  width: 280px;
+  height: 270px;
+  margin: 0 auto 3px;
+}
+
+.program__link {
+  font-family: "Oswald Regular",sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  text-transform: uppercase;
+  color: $white;
+  background-color: $basic-green;
+  display: block;
+  width: 100%;
+  padding: 8px 0;
+}
+

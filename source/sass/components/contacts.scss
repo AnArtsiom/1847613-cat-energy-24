@@ -1,0 +1,22 @@
+.contacts {
+  background-color: #fff;
+}
+
+.contacts__header {
+  padding: 26px 20px;
+  display: flex;
+}
+
+.contacts__cooperation {
+  font-family: "Oswald Regular",sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: $black;
+}
+
+.contacts__address {
+  font-size: 14px;
+  line-height: 20px;
+  color: $dark-grey;
+}
