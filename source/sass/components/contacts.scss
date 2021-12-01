@@ -1,5 +1,5 @@
 .contacts {
-  background-color: #fff;
+  background-color: $white;
 }
 
 .contacts__header {
@@ -8,7 +8,7 @@
 }
 
 .contacts__cooperation {
-  font-family: "Oswald Regular",sans-serif;
+  font-family: "Oswald Regular", sans-serif;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;

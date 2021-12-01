@@ -6,6 +6,7 @@
   padding: 30px 20px 18px;
   position: relative;
   background-color: $white;
+
   &::before {
     content: "";
     position: absolute;
@@ -19,7 +20,7 @@
 }
 
 .nutrition-item__title {
-  font-family: "Oswald Regular",sans-serif;
+  font-family: "Oswald Regular", sans-serif;
   font-size: 24px;
   font-style: normal;
   font-weight: 400;
@@ -38,7 +39,7 @@
 }
 
 .nutrition-item__link {
-  font-family: "Oswald Regular",sans-serif;
+  font-family: "Oswald Regular", sans-serif;
   font-size: 16px;
   line-height: 16px;
   color: $black;

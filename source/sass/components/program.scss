@@ -1,6 +1,7 @@
 .program {
   position: relative;
   padding: 27px 15px 20px;
+
   &::before {
     content: "";
     position: absolute;
@@ -10,7 +11,7 @@
     width: 320px;
     height: 304px;
     background-color: #68b738;
-    background-image: url(../../img/index/index-background.jpg);
+    background-image: url("../../img/index/index-background.jpg");
   }
 }
 
@@ -21,7 +22,7 @@
 }
 
 .program__text {
-  font-family: Oswald;
+  font-family: "Oswald Regular", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -39,7 +40,7 @@
 }
 
 .program__link {
-  font-family: "Oswald Regular",sans-serif;
+  font-family: "Oswald Regular", sans-serif;
   font-size: 14px;
   line-height: 18px;
   text-align: center;

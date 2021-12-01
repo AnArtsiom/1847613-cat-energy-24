@@ -3,8 +3,7 @@
 }
 
 .catalog__title {
-  color: $black;
-  padding:27px 20px 41px;
+  padding: 27px 20px 41px;
   border-top: 1px solid rgba(235, 235, 235, 1);
   border-bottom: 1px solid rgba(235, 235, 235, 1);
   margin-bottom: 8px;
@@ -32,7 +31,7 @@
 }
 
 .product__title {
-  font-family: "Oswald Regular",sans-serif;
+  font-family: "Oswald Regular", sans-serif;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
@@ -58,20 +57,20 @@
 }
 
 .product__item-link {
-    display: block;
-    background-color: $basic-green;
-    font-family: "Oswald Regular",sans-serif;
-    font-size: 16px;
-    line-height: 20px;
-    color: $white;
-    flex: 1 1 100%;
-    text-transform: uppercase;
-    padding: 10px 0;
-    text-align: center;
+  display: block;
+  background-color: $basic-green;
+  font-family: "Oswald Regular", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  color: $white;
+  flex: 1 1 100%;
+  text-transform: uppercase;
+  padding: 10px 0;
+  text-align: center;
 }
 
 .card-show__text--more {
-  font-family: "Oswald Regular",sans-serif;
+  font-family: "Oswald Regular", sans-serif;
   font-size: 16px;
   line-height: 20px;
   color: $black;
@@ -92,7 +91,7 @@
   display: block;
   width: 100%;
   background-color: rgba(242, 242, 242, 1);
-  font-family: "Oswald Regular",sans-serif;
+  font-family: "Oswald Regular", sans-serif;
   font-size: 16px;
   line-height: 20px;
   color: $dark-grey;
