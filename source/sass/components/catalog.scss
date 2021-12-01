@@ -1,0 +1,101 @@
+.catalog {
+  background-color: $white;
+}
+
+.catalog__title {
+  padding: 27px 20px 41px;
+  border-top: 1px solid rgba(235, 235, 235, 1);
+  border-bottom: 1px solid rgba(235, 235, 235, 1);
+  margin-bottom: 8px;
+  color: $black;
+}
+
+.card {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card__link {
+  flex: 1 0 50%;
+}
+
+.cards__item {
+  padding: 11px 0;
+  margin-bottom: 19px;
+  border-bottom: 1px solid rgba(235, 235, 235, 1);
+}
+
+.product__composition {
+  flex: 1 0 50%;
+  margin-bottom: 22px;
+}
+
+.product__title {
+  font-family: "Oswald Regular", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: rgba(34, 34, 34, 1);
+  margin-bottom: 18px;
+  width: 76px;
+}
+
+.product-descr {
+  display: flex;
+  flex-direction: column;
+}
+
+.product-descr__value {
+  display: flex;
+  justify-content: space-between;
+}
+
+.product-descr__value p {
+  font-size: 12px;
+  line-height: 16px;
+  color: $dark-grey;
+}
+
+.product__item-link {
+  display: block;
+  background-color: $basic-green;
+  font-family: "Oswald Regular", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  color: $white;
+  flex: 1 1 100%;
+  text-transform: uppercase;
+  padding: 10px 0;
+  text-align: center;
+}
+
+.card-show__text--more {
+  font-family: "Oswald Regular", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  color: $black;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+
+.card-show__text--small {
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
+  color: $dark-grey;
+  margin-bottom: 21px;
+}
+
+.card-show__link {
+  display: block;
+  width: 100%;
+  background-color: rgba(242, 242, 242, 1);
+  font-family: "Oswald Regular", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  color: $dark-grey;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 10px 0;
+}

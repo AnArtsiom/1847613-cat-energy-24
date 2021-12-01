@@ -1,0 +1,66 @@
+.additional-goods {
+  background-color: $white;
+}
+
+.additional-goods__title {
+  font-family: "Oswald Regular", sans-serif;
+  font-size: 24px;
+  line-height: 24px;
+  color: $black;
+  margin-bottom: 36px;
+}
+
+.additional-goods__item {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.additional-goods__subtitle {
+  font-family: "Oswald Regular", sans-serif;
+  font-size: 16px;
+  line-height: 16px;
+  color: rgba(34, 34, 34, 1);
+  text-transform: uppercase;
+  width: 100%;
+  margin-bottom: 13px;
+}
+
+.additional-goods__value {
+  font-size: 14px;
+  line-height: 14px;
+  color: $dark-grey;
+}
+
+.additional-goods__value--price {
+  margin-left: auto;
+}
+
+.additional-goods__order {
+  font-family: "Oswald Regular", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  color: $white;
+  background-color: $basic-green;
+  text-transform: uppercase;
+  padding: 10px 0;
+  margin-bottom: 17px;
+  width: 100%;
+  margin-top: 15px;
+  text-align: center;
+}
+
+.order-all {
+  background-image: url("../../img/catalog/catalog-mobile/catalog-background.png");
+  background-size: 280px auto;
+  background-color: $basic-green;
+  min-height: 289px;
+}
+
+.order-all__descr {
+  font-size: 16px;
+  line-height: 20px;
+  color: $white;
+  text-align: center;
+  width: 180px;
+  margin: 0 auto;
+}
