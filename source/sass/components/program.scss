@@ -1,6 +1,7 @@
 .program {
   position: relative;
-  padding: 27px 15px 20px;
+  padding-top: 27px;
+  padding-bottom: 20px;
 
   &::before {
     content: "";
@@ -10,8 +11,22 @@
     left: 0;
     width: 320px;
     height: 304px;
-    background-color: #68b738;
+    background-color: $basic-green;
     background-image: url("../../img/index/index-background.jpg");
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-top: 64px;
+    padding-bottom: 87px;
+
+    &::before {
+      display: none;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 111px;
+    padding-bottom: 82px;
   }
 }
 
@@ -19,6 +34,18 @@
   color: $white;
   text-align: center;
   margin-bottom: 25px;
+
+  @media (min-width: $tablet-width) {
+    color: $black;
+    width: 508px;
+    text-align: left;
+    margin-bottom: 41px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 80px;
+    margin-bottom: 40px;
+  }
 }
 
 .program__text {
@@ -31,6 +58,19 @@
   text-align: center;
   color: $white;
   margin-bottom: 29px;
+
+  @media (min-width: $tablet-width) {
+    color: $black;
+    font-size: 20px;
+    line-height: 20px;
+    text-align: left;
+    margin-bottom: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 52px;
+    padding-left: 80px;
+  }
 }
 
 .program__img {
@@ -50,4 +90,11 @@
   display: block;
   width: 100%;
   padding: 8px 0;
+
+  @media (min-width: $tablet-width) {
+    width: 244px;
+    padding: 17px 26px;
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
