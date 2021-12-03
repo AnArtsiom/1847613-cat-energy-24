@@ -31,7 +31,6 @@
 }
 
 .advantages__list {
-
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
@@ -69,8 +68,8 @@
     width: 247px;
 
     &::before {
-    width: 80px;
-    height: 80px;
+      width: 80px;
+      height: 80px;
     }
   }
 }

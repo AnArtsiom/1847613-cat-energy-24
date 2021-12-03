@@ -17,7 +17,7 @@
   padding: 25px 20px 40px;
 
   @media (min-width: $tablet-width) {
-    padding: 43px 0px;
+    padding: 43px 0;
     background-color: $white;
   }
 
@@ -55,7 +55,6 @@
 }
 
 .price__wrapper {
-
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
@@ -89,7 +88,6 @@
 }
 
 .example__item:not(:last-child) {
-
   @media (min-width: $tablet-width) {
     margin-right: 42px;
   }
