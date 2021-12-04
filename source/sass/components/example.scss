@@ -1,25 +1,79 @@
 .example {
   background-color: rgba(234, 234, 234, 1);
+
+  @media (min-width: $tablet-width) {
+    background-color: $white;
+    padding-bottom: 62px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-column-gap: 193px;
+  }
 }
 
 .example__header-wrapper {
   padding: 25px 20px 40px;
+
+  @media (min-width: $tablet-width) {
+    padding: 43px 0;
+    background-color: $white;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 436px;
+    padding-top: 43px;
+  }
 }
 
 .example__title {
   margin-bottom: 40px;
   line-height: 40px;
+
+  @media (min-width: $tablet-width) {
+    line-height: 60px;
+    margin-bottom: 63px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 146px;
+  }
 }
 
 .example__text {
   color: $dark-grey;
   margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 54px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 69px;
+  }
+}
+
+.price__wrapper {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
 }
 
 .example__list {
   display: flex;
   justify-content: space-between;
   margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 80px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 55px;
+  }
 }
 
 .item-example {
@@ -27,6 +81,16 @@
   padding: 14px 0 10px;
   border: 1px solid rgba(205, 205, 205, 1);
   border-radius: 5px;
+
+  @media (min-width: $tablet-width) {
+    width: 162px;
+  }
+}
+
+.example__item:not(:last-child) {
+  @media (min-width: $tablet-width) {
+    margin-right: 42px;
+  }
 }
 
 .item-example__value {
@@ -36,6 +100,11 @@
   text-transform: uppercase;
   margin-bottom: 8px;
   color: $black;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    line-height: 37px;
+  }
 }
 
 .item-example__descr {
@@ -51,10 +120,25 @@
   text-transform: uppercase;
   text-align: center;
   color: $black;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    text-align: right;
+    width: 192px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 436px;
+    text-align: left;
+  }
 }
 
 .examle__slider-wrapper {
   padding-bottom: 40px;
+
+  @media (min-width: $desktop-width) {
+    align-self: center;
+  }
 }
 
 .examle__image-before {
@@ -64,6 +148,12 @@
 .example__buttons {
   display: flex;
   justify-content: space-evenly;
+
+  @media (min-width: $tablet-width) {
+    justify-content: space-between;
+    width: 572px;
+    margin: 0 auto;
+  }
 }
 
 .buttons__button {
@@ -73,4 +163,9 @@
   text-align: center;
   text-transform: uppercase;
   color: $black;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }

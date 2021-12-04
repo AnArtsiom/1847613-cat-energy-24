@@ -1,22 +1,47 @@
 .contacts {
   background-color: $white;
+  padding-top: 26px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 59px;
+  }
 }
 
 .contacts__header {
-  padding: 26px 20px;
   display: flex;
+  justify-content: space-between;
+  margin-bottom: 26px;
+
+  @media (min-width: $desktop-width) {
+    width: 565px;
+    margin-bottom: 0;
+  }
 }
 
 .contacts__cooperation {
   font-family: "Oswald Regular", sans-serif;
   font-size: 16px;
   line-height: 20px;
+  width: 139px;
   text-transform: uppercase;
   color: $black;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 26px;
+    width: 180px;
+  }
 }
 
 .contacts__address {
+  width: 139px;
   font-size: 14px;
   line-height: 20px;
   color: $dark-grey;
+
+  @media (min-width: $tablet-width) {
+    line-height: 20px;
+    width: 160px;
+    text-align: right;
+  }
 }
