@@ -5,24 +5,24 @@
     padding-top: 24px;
   }
 
-  @media (min-width: $desktop-width) {
-    padding-top: 53px;
-    padding-bottom: 29px;
+  // @media (min-width: $desktop-width) {
+  //   padding-top: 53px;
+  //   padding-bottom: 29px;
 
-    &::before {
-      content: "";
-      position: absolute;
-      z-index: -1;
-      top: 0;
-      right: 0;
-      width: 50%;
-      height: 697px;
-      background-color: $basic-green;
-      background-image: url("../../img/index/index-background-desktop.jpg");
-      background-repeat: no-repeat;
-      background-size: cover;
-    }
-  }
+  //   &::before {
+  //     content: "";
+  //     position: absolute;
+  //     z-index: -1;
+  //     top: 0;
+  //     right: 0;
+  //     width: 50%;
+  //     height: 697px;
+  //     background-color: $basic-green;
+  //     background-image: url("../../img/index/index-background-desktop.jpg");
+  //     background-repeat: no-repeat;
+  //     background-size: cover;
+  //   }
+  // }
 }
 
 .main-nav {
@@ -69,7 +69,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    color: $white;
+    // color: $white;
     font-size: 20px;
     line-height: 30px;
   }
