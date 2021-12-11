@@ -4,25 +4,20 @@
     align-items: center;
     padding-top: 24px;
   }
+}
 
-  // @media (min-width: $desktop-width) {
-  //   padding-top: 53px;
-  //   padding-bottom: 29px;
+.header__logo {
+  &:hover {
+    opacity: .8;
+  }
 
-  //   &::before {
-  //     content: "";
-  //     position: absolute;
-  //     z-index: -1;
-  //     top: 0;
-  //     right: 0;
-  //     width: 50%;
-  //     height: 697px;
-  //     background-color: $basic-green;
-  //     background-image: url("../../img/index/index-background-desktop.jpg");
-  //     background-repeat: no-repeat;
-  //     background-size: cover;
-  //   }
-  // }
+  &:active {
+    opacity: .6;
+  }
+}
+
+.header__logo-image {
+  margin: 24px 0;
 }
 
 .main-nav {
@@ -32,8 +27,65 @@
 }
 
 .main-nav__toggle {
+  position: absolute;
+  top: 44px;
+  right: 20px;
+  z-index: 2;
+  display: block;
+  width: 24px;
+  height: 16px;
+  background-color: $white;
+  cursor: pointer;
+  border: none;
+
   @media (min-width: $tablet-width) {
     display: none;
+  }
+}
+
+.main-nav--closed .main-nav__toggle::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 24px;
+  height: 2px;
+  background-color: $black;
+  box-shadow: 0 8px 0 0 $black, 0 16px 0 0 $black;
+}
+
+@media (max-width: $tablet-width) {
+  .main-nav--closed .menu__item {
+    display: none;
+  }
+
+  .main-nav--nojs .main-nav__toggle {
+    display: none;
+  }
+}
+
+.main-nav--opened .main-nav__toggle {
+  top: 44px;
+  right: 20px;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 7px;
+    right: 0;
+    width: 24px;
+    height: 2px;
+    background-color: $black;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+    box-shadow: none;
+  }
+
+  &::after {
+    transform: rotate(-45deg);
   }
 }
 
@@ -66,11 +118,35 @@
     line-height: 24px;
     border: none;
     padding: 10px 0;
+
+    &:hover {
+      opacity: .6;
+    }
+
+    &:active {
+      opacity: .3;
+    }
   }
 
   @media (min-width: $desktop-width) {
-    // color: $white;
     font-size: 20px;
     line-height: 30px;
+  }
+}
+
+.menu__link--current {
+  @media (min-width: $tablet-width) {
+    margin-bottom: 8px;
+    border-bottom: 2px solid $basic-green;
+  }
+
+  @media (min-width: $desktop-width) {
+    border-bottom: 2px solid $white;
+  }
+}
+
+.menu__link--index {
+  @media (min-width: $desktop-width) {
+    color: $white;
   }
 }

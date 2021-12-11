@@ -14,16 +14,16 @@
 }
 
 .example__header-wrapper {
-  padding: 25px 20px 40px;
+  padding: 26px 20px 40px;
 
   @media (min-width: $tablet-width) {
-    padding: 43px 0;
+    padding: 44px 0;
     background-color: $white;
   }
 
   @media (min-width: $desktop-width) {
     width: 436px;
-    padding-top: 43px;
+    padding-top: 44px;
   }
 }
 
@@ -33,7 +33,7 @@
 
   @media (min-width: $tablet-width) {
     line-height: 60px;
-    margin-bottom: 63px;
+    margin-bottom: 64px;
   }
 
   @media (min-width: $desktop-width) {
@@ -50,7 +50,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 69px;
+    margin-bottom: 68px;
   }
 }
 
@@ -72,7 +72,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 55px;
+    margin-bottom: 56px;
   }
 }
 
@@ -142,7 +142,7 @@
 }
 
 .examle__image-before {
-  margin-bottom: 15px;
+  margin-bottom: 16px;
 }
 
 .example__buttons {
