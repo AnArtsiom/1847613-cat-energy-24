@@ -20,11 +20,11 @@
   padding: 38px 0 32px;
 
   &:hover {
-    opacity: .8;
+    opacity: 0.8;
   }
 
   &:active {
-    opacity: .6;
+    opacity: 0.6;
   }
 
   @media (min-width: $tablet-width) {
@@ -55,7 +55,7 @@
   }
 
   &:active {
-    opacity: .3;
+    opacity: 0.3;
   }
 }
 
@@ -74,7 +74,7 @@
   color: $dark-grey;
 
   &:active {
-    opacity: .3;
+    opacity: 0.3;
   }
 
   @media (min-width: $tablet-width) {
@@ -89,7 +89,8 @@
       fill: $basic-green;
     }
   }
+
   &:active {
-    opacity: .3;
+    opacity: 0.3;
   }
 }
