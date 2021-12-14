@@ -55,18 +55,18 @@ body {
 }
 
 .container {
-  width: $mobile-width;
+  max-width: $mobile-width;
   margin: 0 auto;
   padding: 0 20px;
 
   @media (min-width: $tablet-width) {
-    width: $tablet-width;
+    max-width: $tablet-width;
     padding: 0 30px;
   }
 
   @media (min-width: $desktop-width) {
-    width: $desktop-width;
-    padding: 0 110px;
+    max-width: $desktop-width;
+    padding: 0 60px;
   }
 }
 
@@ -104,5 +104,23 @@ body {
   @media (min-width: $desktop-width) {
     width: $desktop-width;
     padding: 0 110px;
+  }
+}
+
+.index-page {
+  @media (min-width: $desktop-width) {
+    &::before {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      top: 0;
+      right: 0;
+      width: 50%;
+      height: 697px;
+      background-color: $basic-green;
+      background-image: url("../../img/index/index-background-desktop.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
   }
 }
