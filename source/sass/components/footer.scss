@@ -71,10 +71,8 @@
   color: $dark-grey;
 
   &:hover {
-    .copyright__logo-image {
-      path {
-        fill: $basic-green;
-      }
+    path {
+      fill: $basic-green;
     }
   }
 
