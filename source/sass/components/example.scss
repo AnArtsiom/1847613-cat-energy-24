@@ -3,6 +3,12 @@
 
   @media (min-width: $tablet-width) {
     background-color: $white;
+  }
+}
+
+.example__inner {
+  @media (min-width: $tablet-width) {
+    background-color: $white;
     padding-bottom: 62px;
   }
 
@@ -14,7 +20,7 @@
 }
 
 .example__header-wrapper {
-  padding: 26px 20px 40px;
+  padding: 26px 0 40px;
 
   @media (min-width: $tablet-width) {
     padding: 44px 0;
@@ -65,10 +71,11 @@
 .example__list {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 80px;
+    min-height: 76px;
   }
 
   @media (min-width: $desktop-width) {
@@ -77,10 +84,13 @@
 }
 
 .item-example {
+  position: relative;
   text-align: center;
   padding: 14px 0 10px;
   border: 1px solid rgba(205, 205, 205, 1);
   border-radius: 5px;
+  min-width: 124px;
+  min-height: 70px;
 
   @media (min-width: $tablet-width) {
     width: 162px;
@@ -88,6 +98,8 @@
 }
 
 .example__item:not(:last-child) {
+  margin-right: 30px;
+
   @media (min-width: $tablet-width) {
     margin-right: 42px;
   }
@@ -108,9 +120,18 @@
 }
 
 .item-example__descr {
+  position: absolute;
+  width: 80px;
   font-size: 12px;
   line-height: 12px;
   color: $dark-grey;
+  margin: 8px 20px 20px;
+  background-color: rgba(234, 234, 234, 1);
+
+  @media (min-width: $tablet-width) {
+    background-color: $white;
+    width: 118px;
+  }
 }
 
 .example__total {

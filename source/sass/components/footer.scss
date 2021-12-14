@@ -63,34 +63,28 @@
   padding: 28px 0 32px;
 }
 
-.copyright {
+.copyright__link {
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-
-.copyright__link {
   font-size: 16px;
   color: $dark-grey;
 
-  &:active {
-    opacity: 0.3;
+  &:hover {
+   .copyright__logo-image {
+     path {
+      fill: $basic-green;
+    }
+   }
   }
 
-  @media (min-width: $tablet-width) {
-    line-height: 18px;
-    margin-right: 22px;
+  &:active {
+    opacity: 0.3;
   }
 }
 
-.copyright__logo-image {
-  &:hover {
-    path {
-      fill: $basic-green;
-    }
-  }
-
-  &:active {
-    opacity: 0.3;
+.copyright__link-descr {
+  @media (min-width: $tablet-width) {
+    margin-right: 22px;
   }
 }
