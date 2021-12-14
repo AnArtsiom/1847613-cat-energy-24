@@ -71,11 +71,11 @@
   color: $dark-grey;
 
   &:hover {
-   .copyright__logo-image {
-     path {
-      fill: $basic-green;
+    .copyright__logo-image {
+      path {
+        fill: $basic-green;
+      }
     }
-   }
   }
 
   &:active {
