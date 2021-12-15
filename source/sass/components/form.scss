@@ -170,14 +170,12 @@
 }
 
 .form__label--radio {
+  color: rgba(34, 34, 34, 1);
+
   &::before {
     border-radius: 50%;
     top: -6px;
   }
-}
-
-.form__label--radio {
-  color: rgba(34, 34, 34, 1);
 
   // &::after {
   //   position: absolute;
