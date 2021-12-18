@@ -1,25 +1,27 @@
 .contacts {
-  background-color: $white;
-  padding-top: 26px;
-
-  @media (min-width: $tablet-width) {
-    padding-top: 60px;
+  @media (min-width: $desktop-width) {
+    position: relative;
   }
+}
+
+.contacts--inner {
+  background-color: rgba(242, 242, 242, 1);
 
   @media (min-width: $desktop-width) {
-    padding-top: 0;
-    position: relative;
+    background-color: $white;
   }
 }
 
 .contacts__header {
   display: flex;
   justify-content: space-between;
-  margin: 0 auto 26px;
+  margin: 0 auto;
+  padding: 26px 20px;
   width: 320px;
+  align-items: center;
 
   @media (min-width: $tablet-width) {
-    padding: 0 40px;
+    padding: 56px 30px;
     width: 768px;
   }
 

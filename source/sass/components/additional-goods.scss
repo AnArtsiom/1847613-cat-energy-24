@@ -7,7 +7,8 @@
   font-size: 24px;
   line-height: 24px;
   color: $black;
-  margin-bottom: 36px;
+  padding-bottom: 25px;
+  border-bottom: 1px solid rgba(205, 205, 205, 1);
 
   @media (min-width: $tablet-width) {
     font-size: 36px;
@@ -16,8 +17,25 @@
 }
 
 .additional-goods__wrapper {
+  margin-bottom: 32px;
+
   @media (min-width: $desktop-width) {
-    display: flex;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    column-gap: 82px;
+    margin-bottom: 86px;
+  }
+}
+
+.additional-goods__list {
+  margin-bottom: 34px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 68px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
   }
 }
 
@@ -25,9 +43,13 @@
   display: flex;
   flex-wrap: wrap;
   align-items: baseline;
+  padding-bottom: 14px;
+  border-bottom: 1px solid rgba(205, 205, 205, 1);
 
   @media (min-width: $desktop-width) {
-    width: 896px;
+    display: grid;
+    grid-template-columns: 320px 250px 80px 243px;
+    padding: 0;
   }
 }
 
@@ -38,7 +60,8 @@
   color: rgba(34, 34, 34, 1);
   text-transform: uppercase;
   width: 100%;
-  margin-bottom: 13px;
+  margin-bottom: 12px;
+  padding-top: 12px;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
@@ -108,14 +131,36 @@
 }
 
 .order-all {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background-image: url("../../img/catalog/catalog-mobile/catalog-background.png");
   background-color: $basic-green;
-  min-height: 289px;
+  padding: 58px 40px 42px;
   background-repeat: no-repeat;
   background-size: cover;
 
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    padding: 56px 124px 69px 76px;
+  }
+
   @media (min-width: $desktop-width) {
+    flex-direction: column;
     width: 245px;
+    padding: 54px 40px 42px;
+  }
+}
+
+.order-all__image {
+  margin: 0 0 48px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 265px 0 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 0 46px;
   }
 }
 
@@ -125,5 +170,4 @@
   color: $white;
   text-align: center;
   width: 180px;
-  margin: 0 auto;
 }
