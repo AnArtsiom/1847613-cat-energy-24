@@ -84,6 +84,7 @@ body {
 
 .index-page {
   position: relative;
+
   @media (min-width: $desktop-width) {
     &::before {
       content: "";
