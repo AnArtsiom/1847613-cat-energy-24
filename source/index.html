@@ -12,7 +12,11 @@
   <header class="header">
     <div class="header__container container">
       <a class="header__logo" href="#">
-        <img class="header__logo-image" src="img/header/logo-header.svg" alt="Логотип.">
+        <picture>
+          <source media="(min-width: 1340px)" srcset="img/header/logo-header-desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/header/logo-header-tablet.svg">
+          <img class="header__logo-image" src="img/header/logo-header-mobile.svg" alt="Логотип.">
+        </picture>
       </a>
       <nav class="header__nav main-nav main-nav--closed main-nav--nojs">
         <button class="main-nav__toggle" type="button">
@@ -20,17 +24,17 @@
         </button>
         <ul class="main-nav__list menu">
           <li class="menu__item">
-            <a class="menu__link menu__link--current menu__link--index" href="#">
+            <a class="menu__link menu__link--current menu__link--index menu__link--index-cur" href="#">
               Главная
             </a>
           </li>
           <li class="menu__item">
-            <a class="menu__link" href="catalog.html">
+            <a class="menu__link menu__link--index" href="catalog.html">
               Каталог продукции
             </a>
           </li>
           <li class="menu__item">
-            <a class="menu__link" href="form.html">
+            <a class="menu__link menu__link--index" href="form.html">
               Подбор программы
             </a>
           </li>
@@ -44,7 +48,13 @@
       <section class="program container">
         <h2 class="program__title title">Функциональное питание для котов</h2>
         <p class="program__text">Занялся собой? Займись котом!</p>
-        <img class="program__img" src="img/index/index-main.png" alt="Cat energy.">
+        <picture>
+          <source media="(min-width: 1340px)" srcset="img/index/index-can.png 1x, img/index/index-can@2x.png 2x">
+          <source media="(min-width: 768px)"
+            srcset="img/index/index-can-tablet.jpg 1x, img/index/index-can-tablet@2x.jpg 2x">
+          <img class="program__img" src="img/index/index-can-mobile.png" srcset="img/index/index-can-mobile@2x.png 2x"
+            alt="Cat energy.">
+        </picture>
         <a class="program__link button" href="#">подобрать программу</a>
       </section>
       <section class="nutrition container">
@@ -117,13 +127,16 @@
           </div>
           <div class="examle__slider-wrapper">
             <div class="examle__image-wrapper">
-              <img class="examle__image-before" src="img/index/slider/mobile/before-mobile.png" alt="Было.">
-              <!-- <img class="examle__image-after" src="img/index/slider/cat-skinny.png" alt="Стало."> -->
+              <picture>
+                <source media="(min-width: 768px)"
+                  srcset="img/index/slider/image-cat-tablet.png 1x, img/index/slider/image-cat-tablet@2x.png 2x">
+                <img class="examle__image-before" src="img/index/slider/mobile/before-mobile.png"
+                  srcset="img/index/slider/mobile/before-mobile@2x.png 2x" alt="Было.">
+              </picture>
             </div>
             <div class="example__buttons buttons">
               <button class="buttons__button buttons__button--before">было</button>
               <div class="buttons__scale">
-                <span class="buttons__scale"></span>
               </div>
               <button class="buttons__button buttons__button--after">стало</button>
             </div>
@@ -140,6 +153,12 @@
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6081599853571!2d30.32077288498873!3d59.938643928032285!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1639219487968!5m2!1sru!2sru"
             width="320" height="362" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+          <picture>
+            <source media="(min-width: 768px)"
+              srcset="img/footer/map-pin-tablet.png 1x, img/footer/map-pin-tablet@2x.png 2x">
+            <img class="contacts__point" src="img/footer/map-pin.png" srcset="img/footer/map-pin@2x.png 2x"
+              alt="Магазин тут.">
+          </picture>
         </div>
       </section>
     </main>

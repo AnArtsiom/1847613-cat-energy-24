@@ -1,9 +1,7 @@
 .program {
   position: relative;
   padding-top: 26px;
-  padding-bottom: 20px;
-  display: grid;
-  width: 100%;
+  margin-bottom: 20px;
 
   &::before {
     content: "";
@@ -11,17 +9,24 @@
     z-index: -1;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 304px;
+    width: 320px;
+    height: 302px;
     background-color: $basic-green;
-    background-image: url("../../img/index/index-background.jpg");
+    background-image: url("../../img/index/index-background-mobile.jpg");
     background-repeat: no-repeat;
     background-size: cover;
   }
 
+  @media (min-resolution: 2dppx) {
+      &::before {
+        background-image: url("../../img/index/index-background-mobile@2x.jpg");
+      }
+    }
+
   @media (min-width: $tablet-width) {
-    padding-top: 64px;
-    padding-bottom: 86px;
+    padding-left: 120px;
+    margin-bottom: 76px;
+    min-height: 810px;
 
     &::before {
       display: none;
@@ -29,8 +34,9 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 112px;
-    padding-bottom: 82px;
+    padding-left: 130px;
+    min-height: 553px;
+    margin-bottom: 82px;
   }
 }
 
@@ -47,7 +53,6 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-left: 80px;
     margin-bottom: 40px;
   }
 }
@@ -68,19 +73,34 @@
     font-size: 20px;
     line-height: 20px;
     text-align: left;
-    margin-bottom: 20px;
+    margin-bottom: 45px;
   }
 
   @media (min-width: $desktop-width) {
     margin-bottom: 52px;
-    padding-left: 80px;
   }
 }
 
 .program__img {
   width: 280px;
   height: 270px;
-  margin: 0 auto 4px;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    z-index: -1;
+    left: 40px;
+    top: 235px;
+    height: 610px;
+    width: auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 552px;
+    height: auto;
+    left: 50%;
+    top: 0px;
+    transform: translateX(-30%);
+  }
 }
 
 .program__link {
@@ -104,6 +124,9 @@
   }
 
   @media (min-width: $tablet-width) {
+    // position: absolute;
+    // top: 32%;
+    // left: 30px;
     width: 244px;
     padding: 18px 26px;
     font-size: 20px;

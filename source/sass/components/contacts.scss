@@ -66,6 +66,10 @@
   }
 }
 
+.contacts__map {
+  position: relative;
+}
+
 .contacts__map iframe {
   border: none;
   display: block;
@@ -74,4 +78,11 @@
   @media (min-width: $tablet-width) {
     height: 400px;
   }
+}
+
+.contacts__point {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }

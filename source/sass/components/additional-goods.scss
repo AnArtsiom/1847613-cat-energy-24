@@ -140,15 +140,29 @@
   background-repeat: no-repeat;
   background-size: cover;
 
+  @media (min-resolution: 2dppx) {
+    background-image: url("../../img/catalog/catalog-mobile/catalog-background@2x.png");
+  }
+
   @media (min-width: $tablet-width) {
     flex-direction: row;
     padding: 56px 124px 69px 76px;
+    background-image: url("../../img/catalog/catalog-tablet/catalog-background-tablet.png");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/catalog/catalog-tablet/catalog-background-tablet@2x.png");
+    }
   }
 
   @media (min-width: $desktop-width) {
     flex-direction: column;
     width: 245px;
     padding: 54px 40px 42px;
+    background-image: url("../../img/catalog/catalog-desktop/catalog-background-desktop.png");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/catalog/catalog-desktop/catalog-background-desktop@2x.png");
+    }
   }
 }
 

@@ -4,9 +4,17 @@
 
 .catalog__list {
   @media (min-width: $tablet-width) {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 60px;
+    row-gap: 140px;
+    margin-bottom: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 80px;
+    margin-bottom: 74px;
   }
 }
 
@@ -20,15 +28,19 @@
 
   @media (min-width: $tablet-width) {
     border: none;
+    padding-bottom: 0;
+    margin-bottom: 163px;
   }
 }
 
 .card {
   display: flex;
   flex-wrap: wrap;
+  position: relative;
 
   @media (min-width: $tablet-width) {
     width: 324px;
+    min-height: 430px;
     flex-direction: column;
     align-items: center;
     background-color: $basic-grey;
@@ -41,15 +53,34 @@
 
 .card__link {
   align-self: center;
-  flex: 1 0 50%;
-
-  @media (min-width: $tablet-width) {
-    flex: 0;
-  }
+  width: 50%;
+  margin-bottom: 34px;
 }
 
 .card__link-image {
   margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+.card:nth-of-type(odd) {
+  @media (min-width: $tablet-width) {
+    .card__link {
+      margin-top: -45px;
+    }
+  }
+}
+
+.card:nth-of-type(even) {
+  @media (min-width: $tablet-width) {
+    .card__link {
+      margin-top: -74px;
+    }
+  }
 }
 
 .cards__item {
@@ -58,9 +89,9 @@
   border-bottom: 1px solid rgba(235, 235, 235, 1);
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 60px;
     padding: 0;
     border: none;
+    margin-bottom: 0;
   }
 }
 
@@ -104,6 +135,10 @@
 .product-descr__value {
   display: flex;
   justify-content: space-between;
+
+  @media (min-width: $desktop-width) {
+    justify-content: space-around;
+  }
 }
 
 .product-descr__value p {
@@ -124,7 +159,7 @@
   font-size: 16px;
   line-height: 20px;
   color: $white;
-  width: 280px;
+  width: 100%;
   // flex: 1 0 100%;
   text-transform: uppercase;
   padding: 10px 0;
@@ -145,6 +180,7 @@
   align-items: center;
 
   @media (min-width: $tablet-width) {
+    padding: 50px 38px 38px;
     border: 2px solid $basic-grey;
     width: 324px;
   }
@@ -155,9 +191,6 @@
 }
 
 .card-show__link--more {
-  margin-bottom: 22px;
-  margin-top: 24px;
-  padding-bottom: 22px;
   position: relative;
 
   &::before {
@@ -186,6 +219,7 @@
     &::before,
     &::after {
       width: 60px;
+      top: 50px;
     }
   }
 }
@@ -198,8 +232,10 @@
   text-align: center;
   text-transform: uppercase;
   margin-bottom: 8px;
+  padding-top: 38px;
 
   @media (min-width: $tablet-width) {
+    padding-top: 108px;
     margin-bottom: 23px;
     font-size: 20px;
     line-height: 22px;
@@ -217,6 +253,10 @@
     margin-bottom: 87px;
     font-size: 16px;
     line-height: 18px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 70px;
   }
 }
 

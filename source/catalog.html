@@ -12,7 +12,11 @@
   <header class="header">
     <div class="header__container container">
       <a class="header__logo" href="#">
-        <img class="header__logo-image" src="img/header/logo-header.svg" alt="Логотип.">
+        <picture>
+          <source media="(min-width: 1340px)" srcset="img/header/logo-header-desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/header/logo-header-tablet.svg">
+          <img class="header__logo-image" src="img/header/logo-header-mobile.svg" alt="Логотип.">
+        </picture>
       </a>
       <nav class="header__nav main-nav main-nav--closed main-nav--nojs">
         <button class="main-nav__toggle" type="button">
@@ -45,7 +49,14 @@
         <ul class="catalog__list cards">
           <li class="cards__item card">
             <a class="card__link" href="#">
-              <img class="card__link-image" src="img/catalog/catalog-mobile/catalog-1.png" alt="Куриный вкус.500г.">
+              <picture>
+                <source media="(min-width: 1340px)"
+                  srcset="img/catalog/catalog-desktop/catalog-1-desktop.png 1x, img/catalog/catalog-desktop/catalog-1-desktop@2x.png 2x">
+                <source media="(min-width: 768px)"
+                  srcset="img/catalog/catalog-tablet/catalog-1-tablet.png 1x, img/catalog/catalog-tablet/catalog-1-tablet@2x.png 2x">
+                <img class="card__link-image" src="img/catalog/catalog-mobile/catalog-1-mobile.png"
+                  srcset="img/catalog/catalog-mobile/catalog-1-mobile@2x.png 2x" alt="Куриный вкус.500г.">
+              </picture>
             </a>
             <div class="product__composition">
               <a class="product__title-link" href="">
@@ -70,7 +81,14 @@
           </li>
           <li class="cards__item card">
             <a class="card__link" href="#">
-              <img class="card__link-image" src="img/catalog/catalog-mobile/catalog-2.png" alt="Куриный вкус.1000г.">
+              <picture>
+                <source media="(min-width: 1340px)"
+                  srcset="img/catalog/catalog-desktop/catalog-2-desktop.png 1x, img/catalog/catalog-desktop/catalog-2-desktop@2x.png 2x">
+                <source media="(min-width: 768px)"
+                  srcset="img/catalog/catalog-tablet/catalog-2-tablet.png 1x, img/catalog/catalog-tablet/catalog-2-tablet@2x.png 2x">
+                <img class="card__link-image" src="img/catalog/catalog-mobile/catalog-2-mobile.png"
+                  srcset="img/catalog/catalog-mobile/catalog-2-mobile@2x.png 2x" alt="Куриный вкус.1000г.">
+              </picture>
             </a>
             <div class="product__composition">
               <a class="product__title-link" href="">
@@ -95,7 +113,14 @@
           </li>
           <li class="cards__item card">
             <a class="card__link" href="#">
-              <img class="card__link-image" src="img/catalog/catalog-mobile/catalog-3.png" alt="Рыбный вкус.500г.">
+              <picture>
+                <source media="(min-width: 1340px)"
+                  srcset="img/catalog/catalog-desktop/catalog-3-desktop.png 1x, img/catalog/catalog-desktop/catalog-3-desktop@2x.png 2x">
+                <source media="(min-width: 768px)"
+                  srcset="img/catalog/catalog-tablet/catalog-3-tablet.png 1x, img/catalog/catalog-tablet/catalog-3-tablet@2x.png 2x">
+                <img class="card__link-image" src="img/catalog/catalog-mobile/catalog-3-mobile.png"
+                  srcset="img/catalog/catalog-mobile/catalog-3-mobile@2x.png 2x" alt="Рыбный вкус.500г.">
+              </picture>
             </a>
             <div class="product__composition">
               <a class="product__title-link" href="">
@@ -120,7 +145,14 @@
           </li>
           <li class="cards__item card">
             <a class="card__link" href="#">
-              <img class="card__link-image" src="img/catalog/catalog-mobile/catalog-4.png" alt="Рыбный вкус.1000г.">
+              <picture>
+                <source media="(min-width: 1340px)"
+                  srcset="img/catalog/catalog-desktop/catalog-4-desktop.png 1x, img/catalog/catalog-desktop/catalog-4-desktop@2x.png 2x">
+                <source media="(min-width: 768px)"
+                  srcset="img/catalog/catalog-tablet/catalog-4-tablet.png 1x, img/catalog/catalog-tablet/catalog-4-tablet@2x.png 2x">
+                <img class="card__link-image" src="img/catalog/catalog-mobile/catalog-4-mobile.png"
+                  srcset="img/catalog/catalog-mobile/catalog-4-mobile@2x.png 2x" alt="Рыбный вкус.1000г.">
+              </picture>
             </a>
             <div class="product__composition">
               <a class="product__title-link" href="">
@@ -145,7 +177,14 @@
           </li>
           <li class="cards__item card">
             <a class="card__link" href="#">
-              <img class="card__link-image" src="img/catalog/catalog-mobile/catalog-5.png" alt="Гречка.500г.">
+              <picture>
+                <source media="(min-width: 1340px)"
+                  srcset="img/catalog/catalog-desktop/catalog-5-desktop.png 1x, img/catalog/catalog-desktop/catalog-5-desktop@2x.png 2x">
+                <source media="(min-width: 768px)"
+                  srcset="img/catalog/catalog-tablet/catalog-5-tablet.png 1x, img/catalog/catalog-tablet/catalog-5-tablet@2x.png 2x">
+                <img class="card__link-image" src="img/catalog/catalog-mobile/catalog-5-mobile.png"
+                  srcset="img/catalog/catalog-mobile/catalog-5-mobile@2x.png 2x" alt="Гречка.500г.">
+              </picture>
             </a>
             <div class="product__composition">
               <a class="product__title-link" href="">
@@ -170,7 +209,14 @@
           </li>
           <li class="cards__item card">
             <a class="card__link" href="#">
-              <img class="card__link-image" src="img/catalog/catalog-mobile/catalog-6.png" alt="Гречка.1000г.">
+              <picture>
+                <source media="(min-width: 1340px)"
+                  srcset="img/catalog/catalog-desktop/catalog-6-desktop.png 1x, img/catalog/catalog-desktop/catalog-6-desktop@2x.png 2x">
+                <source media="(min-width: 768px)"
+                  srcset="img/catalog/catalog-tablet/catalog-6-tablet.png 1x, img/catalog/catalog-tablet/catalog-6-tablet@2x.png 2x">
+                <img class="card__link-image" src="img/catalog/catalog-mobile/catalog-6-mobile.png"
+                  srcset="img/catalog/catalog-mobile/catalog-6-mobile@2x.png 2x" alt="Гречка.1000г.">
+              </picture>
             </a>
             <div class="product__composition">
               <a class="product__title-link" href="">
@@ -195,7 +241,14 @@
           </li>
           <li class="cards__item card">
             <a class="card__link" href="#">
-              <img class="card__link-image" src="img/catalog/catalog-mobile/catalog-7.png" alt="Рис.500г.">
+              <picture>
+                <source media="(min-width: 1340px)"
+                  srcset="img/catalog/catalog-desktop/catalog-7-desktop.png 1x, img/catalog/catalog-desktop/catalog-7-desktop@2x.png 2x">
+                <source media="(min-width: 768px)"
+                  srcset="img/catalog/catalog-tablet/catalog-7-tablet.png 1x, img/catalog/catalog-tablet/catalog-7-tablet@2x.png 2x">
+                <img class="card__link-image" src="img/catalog/catalog-mobile/catalog-7-mobile.png"
+                  srcset="img/catalog/catalog-mobile/catalog-7-mobile@2x.png 2x" alt="Рис.500г.">
+              </picture>
             </a>
             <div class="product__composition">
               <a class="product__title-link" href="">
@@ -220,7 +273,6 @@
           </li>
           <li class="cards__item card-show">
             <a class="card-show__link--more" href="#">
-              <!-- <img class="card-show__icon" src="img/catalog/catalog-mobile/icon-plus.png" alt="Посмотреть все товары."> -->
             </a>
             <p class="card-show__text--more">Показать еще 100500 товаров</p>
             <p class="card-show__text--small">На самом деле вкусов гораздо больше!</p>
@@ -294,6 +346,12 @@
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6081599853571!2d30.32077288498873!3d59.938643928032285!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1639219487968!5m2!1sru!2sru"
             width="320" height="362" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+          <picture>
+            <source media="(min-width: 768px)"
+              srcset="img/footer/map-pin-tablet.png 1x, img/footer/map-pin-tablet@2x.png 2x">
+            <img class="contacts__point" src="img/footer/map-pin.png" srcset="img/footer/map-pin@2x.png 2x"
+              alt="Магазин тут.">
+          </picture>
         </div>
       </section>
     </main>

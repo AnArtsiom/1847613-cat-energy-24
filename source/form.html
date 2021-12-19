@@ -12,7 +12,11 @@
   <header class="header">
     <div class="header__container container">
       <a class="header__logo" href="#">
-        <img class="header__logo-image" src="img/header/logo-header.svg" alt="Логотип.">
+        <picture>
+          <source media="(min-width: 1340px)" srcset="img/header/logo-header-desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/header/logo-header-tablet.svg">
+          <img class="header__logo-image" src="img/header/logo-header-mobile.svg" alt="Логотип.">
+        </picture>
       </a>
       <nav class="header__nav main-nav main-nav--closed main-nav--nojs">
         <button class="main-nav__toggle" type="button">
@@ -162,6 +166,12 @@
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6081599853571!2d30.32077288498873!3d59.938643928032285!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1639219487968!5m2!1sru!2sru"
             width="320" height="362" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+          <picture>
+            <source media="(min-width: 768px)"
+              srcset="img/footer/map-pin-tablet.png 1x, img/footer/map-pin-tablet@2x.png 2x">
+            <img class="contacts__point" src="img/footer/map-pin.png" srcset="img/footer/map-pin@2x.png 2x"
+              alt="Магазин тут.">
+          </picture>
         </div>
       </section>
     </main>

@@ -83,6 +83,7 @@ body {
 }
 
 .index-page {
+  position: relative;
   @media (min-width: $desktop-width) {
     &::before {
       content: "";
@@ -91,11 +92,17 @@ body {
       top: 0;
       right: 0;
       width: 50%;
-      height: 697px;
+      height: 694px;
       background-color: $basic-green;
       background-image: url("../../img/index/index-background-desktop.jpg");
       background-repeat: no-repeat;
-      background-size: cover;
+      background-size: 720px auto;
+    }
+
+    @media (min-resolution: 2dppx) {
+      &::before {
+        background-image: url("../../img/index/index-background-desktop@2x.jpg");
+      }
     }
   }
 }
