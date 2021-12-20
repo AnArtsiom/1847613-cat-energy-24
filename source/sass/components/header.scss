@@ -2,16 +2,23 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  width: 100%;
+  min-height: 66px;
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
     align-items: center;
-    padding-top: 24px;
+    min-height: 84px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 108px;
   }
 }
 
 .header__logo {
+  padding: 14px;
+  width: 80%;
+
   &:hover {
     opacity: 0.8;
   }
@@ -19,10 +26,14 @@
   &:active {
     opacity: 0.6;
   }
-}
 
-.header__logo-image {
-  margin: 24px 0;
+  @media (min-width: $tablet-width) {
+    width: 30%;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 20%;
+  }
 }
 
 .main-nav {
@@ -33,7 +44,7 @@
 
 .main-nav__toggle {
   position: absolute;
-  top: 44px;
+  top: 24px;
   right: 20px;
   z-index: 2;
   display: block;
@@ -70,7 +81,7 @@
 }
 
 .main-nav--opened .main-nav__toggle {
-  top: 44px;
+  top: 24px;
   right: 20px;
 
   &::before,
@@ -138,6 +149,12 @@
   }
 
   &--index {
+    @media (min-width: $desktop-width) {
+      color: $white;
+    }
+  }
+
+  &--index-cur {
     @media (min-width: $desktop-width) {
       &::before {
         position: absolute;
