@@ -7,16 +7,16 @@
   @media (min-width: $tablet-width) {
     flex-direction: row;
     align-items: center;
-    min-height: 84px;
+    min-height: 102px;
   }
 
   @media (min-width: $desktop-width) {
-    min-height: 108px;
+    min-height: 166px;
   }
 }
 
 .header__logo {
-  padding: 14px;
+  padding: 10px 0;
   width: 80%;
 
   &:hover {
@@ -32,7 +32,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 20%;
+    padding: 20px 0;
   }
 }
 

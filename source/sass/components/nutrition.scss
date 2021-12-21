@@ -13,10 +13,10 @@
 }
 
 .nutrition__item:not(:last-child) {
-  margin-bottom: 20px;
+  margin-bottom: 24px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 30px;
+    margin-bottom: 36px;
   }
 
   @media (min-width: $desktop-width) {
@@ -41,7 +41,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    padding: 76px 62px 56px 52px;
+    padding: 76px 62px 52px 52px;
 
     &::before {
       width: 200px;
@@ -56,7 +56,7 @@
     &::before {
       width: 100px;
       height: 100px;
-      top: 39px;
+      top: 45px;
       left: 52px;
     }
   }
@@ -100,9 +100,9 @@
 
   @media (min-width: $tablet-width) {
     &::after {
-      top: 74px;
+      top: 80px;
       left: auto;
-      right: 84px;
+      right: 92px;
       width: 140px;
       height: 194px;
       background-size: 140px 194px;
@@ -111,8 +111,8 @@
 
   @media (min-width: $desktop-width) {
     &::after {
-      top: 30px;
-      left: 70px;
+      top: 40px;
+      left: 66px;
       right: auto;
       width: 70px;
       height: 98px;
@@ -126,7 +126,7 @@
     content: "";
     position: absolute;
     background: url("../../img/index/nutrition/cat-2.svg") no-repeat;
-    top: 36px;
+    top: 34px;
     left: 12px;
     width: 68px;
     height: 28px;
@@ -134,9 +134,9 @@
 
   @media (min-width: $tablet-width) {
     &::after {
-      top: 127px;
+      top: 135px;
       left: auto;
-      right: 44px;
+      right: 29px;
       width: 268px;
       height: 112px;
       background-size: 268px 112px;
@@ -163,13 +163,13 @@
 
   @media (min-width: $tablet-width) {
     width: 340px;
-    margin-bottom: 52px;
+    margin-bottom: 28px;
     border: none;
   }
 
   @media (min-width: $desktop-width) {
     width: 100%;
-    margin-bottom: 24px;
+    margin-bottom: 5px;
   }
 }
 
