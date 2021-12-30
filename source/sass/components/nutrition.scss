@@ -194,6 +194,14 @@
     right: -24px;
   }
 
+  &:hover {
+    &::after {
+      width: 32px;
+      background-image: url("../../img/index/icon-arrow-hover.png");
+      right: -32px;
+    }
+  }
+
   &:active {
     opacity: 0.4;
   }

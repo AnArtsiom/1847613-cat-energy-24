@@ -2,15 +2,11 @@
   background-color: rgba(234, 234, 234, 1);
 
   @media (min-width: $tablet-width) {
-    background-color: $white;
+    background-color: transparent;
   }
 }
 
 .example__inner {
-  @media (min-width: $tablet-width) {
-    background-color: $white;
-  }
-
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: 1fr 2fr;
@@ -29,6 +25,7 @@
   @media (min-width: $desktop-width) {
     width: 436px;
     padding-top: 44px;
+    background-color: transparent;
   }
 }
 
@@ -70,26 +67,21 @@
 .example__list {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 30px;
+  margin-bottom: 5px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 80px;
+    margin-bottom: 64px;
     min-height: 76px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 56px;
+    margin-bottom: 24px;
   }
 }
 
 .item-example {
-  position: relative;
   text-align: center;
-  padding: 14px 0 10px;
-  border: 1px solid rgba(205, 205, 205, 1);
-  border-radius: 5px;
   min-width: 124px;
-  min-height: 56px;
 
   @media (min-width: $tablet-width) {
     width: 162px;
@@ -97,39 +89,53 @@
 }
 
 .example__item:not(:last-child) {
-  margin-right: 30px;
-
   @media (min-width: $tablet-width) {
     margin-right: 42px;
   }
 }
 
 .item-example__value {
-  font-family: "Oswald Regular", sans-serif;
+  position: relative;
+  padding: 15px 10px;
   font-size: 24px;
   line-height: 24px;
-  text-transform: uppercase;
-  margin-bottom: 8px;
+  font-family: "Oswald Regular", "Arial", sans-serif;
   color: $black;
+  text-transform: uppercase;
+  border: 1px solid #cdcdcd;
+  border-radius: 3px;
 
   @media (min-width: $tablet-width) {
     font-size: 30px;
     line-height: 37px;
   }
+
+  @media (min-width: $tablet-width) {
+    padding: 18px 10px;
+  }
 }
 
 .item-example__descr {
-  position: absolute;
+  display: inline-block;
+  vertical-align: top;
   width: 80px;
+  margin: 0 10px;
+  padding: 0 15px;
   font-size: 12px;
   line-height: 12px;
-  color: $dark-grey;
-  margin: 0 20px 20px;
   background-color: rgba(234, 234, 234, 1);
+  transform: translateY(-8px);
 
   @media (min-width: $tablet-width) {
     background-color: $white;
-    width: 118px;
+    width: 128px;
+    font-size: 14px;
+    line-height: 14px;
+    padding: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-color: rgba(234, 234, 234, 1);
   }
 }
 
@@ -145,6 +151,7 @@
     font-size: 20px;
     text-align: right;
     width: 192px;
+    padding-top: 9px;
   }
 
   @media (min-width: $desktop-width) {
@@ -153,22 +160,69 @@
   }
 }
 
+.example__total-value {
+  @media (min-width: $tablet-width) {
+    display: inline-block;
+    margin-top: 5px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 59px;
+  }
+}
+
 .examle__slider-wrapper {
+  position: relative;
   padding-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 0 40px;
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 100vw;
+      top: 168px;
+      left: 50%;
+      background-color: rgba(234, 234, 234, 1);
+      height: 462px;
+      z-index: -1;
+    }
+
+    &::after {
+      position: absolute;
+      content: "";
+      width: 100vw;
+      top: 168px;
+      right: 50%;
+      background-color: rgba(234, 234, 234, 1);
+      height: 462px;
+      z-index: -1;
+    }
+  }
 
   @media (min-width: $desktop-width) {
     align-self: center;
   }
 }
 
-.examle__image-before {
-  margin-bottom: 16px;
+.examle__image-before,
+.examle__image-after {
+  margin: 0 auto 16px;
 
   @media (min-width: $tablet-width) {
     margin: 0 auto 25px;
     width: 592px;
     height: 511px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 auto 31px;
+  }
+}
+
+.examle__image-after {
+  display: none;
 }
 
 .example__buttons {
@@ -230,6 +284,12 @@
       top: 50%;
       transform: translate(-50%, -50%);
     }
+
+    &:active {
+      &::before {
+        border: 1px solid $basic-green;
+      }
+    }
   }
 }
 
@@ -247,5 +307,13 @@
     border: none;
     border-bottom: 1px dotted $dark-grey;
     background-color: transparent;
+
+    &:hover {
+      border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    }
+
+    &:active {
+      border-bottom: 1px solid transparent;
+    }
   }
 }

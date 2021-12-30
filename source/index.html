@@ -13,7 +13,7 @@
 
 <body class="index-page">
   <header class="header">
-    <div class="header__container container">
+    <div class="header__container">
       <a class="header__logo" href="#">
         <picture>
           <source media="(min-width: 1340px)" srcset="img/header/logo-header-desktop.svg">
@@ -22,9 +22,7 @@
         </picture>
       </a>
       <nav class="header__nav main-nav main-nav--closed main-nav--nojs">
-        <button class="main-nav__toggle" type="button">
-          <span class="visually-hidden">Открыть меню</span>
-        </button>
+
         <ul class="main-nav__list menu">
           <li class="menu__item">
             <a class="menu__link menu__link--current menu__link--index menu__link--index-cur" href="#">
@@ -42,7 +40,11 @@
             </a>
           </li>
         </ul>
+        <button class="main-nav__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
       </nav>
+
     </div>
   </header>
   <div class="wrapper">
@@ -137,13 +139,23 @@
             <div class="examle__image-wrapper">
               <picture>
                 <source type="image/webp" media="(min-width: 768px)"
-                  srcset="img/index/slider/image-cat-tablet.webp 1x, img/index/slider/image-cat-tablet@2x.webp 2x">
+                  srcset="img/index/slider/cat-fat.webp 1x, img/index/slider/cat-fat@2x.webp 2x">
                 <source type="image/webp"
                   srcset="img/index/slider/mobile/before-mobile.webp 1x, img/index/slider/mobile/before-mobile@2x.webp 2x">
                 <source media="(min-width: 768px)"
-                  srcset="img/index/slider/image-cat-tablet.png 1x, img/index/slider/image-cat-tablet@2x.png 2x">
+                  srcset="img/index/slider/cat-fat.png 1x, img/index/slider/cat-fat@2x.png 2x">
                 <img class="examle__image-before" src="img/index/slider/mobile/before-mobile.png"
                   srcset="img/index/slider/mobile/before-mobile@2x.png 2x" width="280" height="232" alt="Было.">
+              </picture>
+              <picture>
+                <source type="image/webp" media="(min-width: 768px)"
+                  srcset="img/index/slider/cat-skinny.webp 1x, img/index/slider/cat-skinny@2x.webp 2x">
+                <source type="image/webp"
+                  srcset="img/index/slider/mobile/after-mobile.webp 1x, img/index/slider/mobile/after-mobile@2x.webp 2x">
+                <source media="(min-width: 768px)"
+                  srcset="img/index/slider/cat-skinny.png 1x, img/index/slider/cat-skinny@2x.png 2x">
+                <img class="examle__image-after" src="img/index/slider/mobile/after-mobile.png"
+                  srcset="img/index/slider/mobile/after-mobile@2x.png 2x" width="280" height="232" alt="Стало.">
               </picture>
             </div>
             <div class="example__buttons buttons">
@@ -206,7 +218,7 @@
           </li>
           <li class="social__item">
             <a class="social__link social__link--facebook" href="#">
-              <svg class="social__link-icon" width="22" height="22">
+              <svg class="social__link-icon" width="22" height="20">
                 <use xlink:href="../../img/sprite.svg#icon-facebook"></use>
               </svg>
               <span class="visually-hidden">Facebook</span>

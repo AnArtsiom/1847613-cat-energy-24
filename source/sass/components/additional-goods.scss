@@ -1,23 +1,22 @@
-.additional-goods {
-  background-color: $white;
-}
-
 .additional-goods__title {
-  font-family: "Oswald Regular", sans-serif;
-  font-size: 24px;
-  line-height: 24px;
-  color: $black;
-  padding-bottom: 25px;
-  border-bottom: 1px solid rgba(205, 205, 205, 1);
+  margin-bottom: 36px;
 
   @media (min-width: $tablet-width) {
-    font-size: 36px;
-    line-height: 36px;
+    margin-left: 0;
+    margin-bottom: 80px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: -40px;
   }
 }
 
 .additional-goods__wrapper {
   margin-bottom: 32px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 72px;
+  }
 
   @media (min-width: $desktop-width) {
     display: grid;
@@ -43,13 +42,24 @@
   display: flex;
   flex-wrap: wrap;
   align-items: baseline;
-  padding-bottom: 14px;
+  padding-bottom: 19px;
   border-bottom: 1px solid rgba(205, 205, 205, 1);
+
+  @media (min-width: $tablet-width) {
+    padding: 0 38px 25px;
+    margin-bottom: 14px;
+
+    &:nth-child(1) {
+      padding-top: 10px;
+      border-top: 1px solid rgba(205, 205, 205, 1);
+    }
+  }
 
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: 320px 250px 80px 243px;
-    padding: 0;
+    padding: 0 0 14px;
+    margin-bottom: 0;
   }
 }
 
@@ -120,7 +130,7 @@
   background-color: $basic-green;
   text-transform: uppercase;
   padding: 10px 0;
-  margin-bottom: 17px;
+  // margin-bottom: 17px;
   width: 100%;
   margin-top: 15px;
   text-align: center;
