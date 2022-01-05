@@ -9,23 +9,23 @@
     z-index: -1;
     top: 0;
     left: 0;
-    width: 320px;
+    width: 100%;
     height: 302px;
     background-color: $basic-green;
-    background-image: url("../../img/index/index-background-mobile.jpg");
+    background-image: url("../../img/index/index-background-mobile.webp"), url("../../img/index/index-background-mobile.jpg");
     background-repeat: no-repeat;
     background-size: cover;
   }
 
   @media (min-resolution: 2dppx) {
     &::before {
-      background-image: url("../../img/index/index-background-mobile@2x.jpg");
+      background-image: url("../../img/index/index-background-mobile@2x.webp"), url("../../img/index/index-background-mobile@2x.jpg");
     }
   }
 
   @media (min-width: $tablet-width) {
     padding-top: 40px;
-    padding-left: 120px;
+    padding-left: 90px;
     margin-bottom: 37px;
     min-height: 810px;
 
@@ -36,7 +36,7 @@
 
   @media (min-width: $desktop-width) {
     padding-top: 58px;
-    padding-left: 190px;
+    padding-left: 80px;
     min-height: 553px;
     margin-bottom: 58px;
   }
@@ -87,17 +87,18 @@
   @media (min-width: $tablet-width) {
     position: absolute;
     z-index: -1;
-    left: 30px;
+    left: 50%;
     top: 235px;
     height: 610px;
     width: auto;
+    transform: translateX(-50%);
   }
 
   @media (min-width: $desktop-width) {
     width: 552px;
     height: auto;
     left: 50%;
-    top: -23px;
+    top: 0;
     transform: translateX(-30%);
   }
 }

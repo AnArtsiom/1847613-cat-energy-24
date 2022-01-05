@@ -5,6 +5,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>CAT ENERGY</title>
+  <link rel="preload" href="fonts/oswaldregular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/oswaldmedium.woff2" type="font/woff2" as="font" crossorigin="anonymous">
   <link rel="icon" href="favicon.ico">
   <link rel="icon" href="img/favicons/32.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="img/favicons/152.svg">
@@ -18,7 +20,8 @@
         <picture>
           <source media="(min-width: 1340px)" srcset="img/header/logo-header-desktop.svg">
           <source media="(min-width: 768px)" srcset="img/header/logo-header-tablet.svg">
-          <img class="header__logo-image" src="img/header/logo-header-mobile.svg" alt="Логотип.">
+          <img class="header__logo-image" src="img/header/logo-header-mobile.svg" width="191" height="40"
+            alt="Логотип.">
         </picture>
       </a>
       <nav class="header__nav main-nav main-nav--closed main-nav--nojs">
@@ -50,22 +53,25 @@
   <div class="wrapper">
     <main class="page-main">
       <h1 class="visually-hidden">Cat energy - функциональное питание для котов</h1>
-      <section class="program container">
-        <h2 class="program__title title">Функциональное питание для котов</h2>
-        <p class="program__text">Занялся собой? Займись котом!</p>
-        <picture>
-          <source type="image/webp" media="(min-width: 1340px)"
-            srcset="img/index/index-can.webp 1x, img/index/index-can@2x.webp 2x">
-          <source type="image/webp" media="(min-width: 768px)"
-            srcset="img/index/index-can-tablet.webp 1x, img/index/index-can-tablet@2x.webp 2x">
-          <source type="image/webp" srcset="img/index/index-can-mobile.webp 1x, img/index/index-can-mobile@2x.webp 2x">
-          <source media="(min-width: 1340px)" srcset="img/index/index-can.png 1x, img/index/index-can@2x.png 2x">
-          <source media="(min-width: 768px)"
-            srcset="img/index/index-can-tablet.jpg 1x, img/index/index-can-tablet@2x.jpg 2x">
-          <img class="program__img" src="img/index/index-can-mobile.png" srcset="img/index/index-can-mobile@2x.png 2x"
-            width="280" height="270" alt="Cat energy.">
-        </picture>
-        <a class="program__link button" href="#">подобрать программу</a>
+      <section class="program">
+        <div class="program__inner container">
+          <h2 class="program__title title">Функциональное питание для котов</h2>
+          <p class="program__text">Занялся собой? Займись котом!</p>
+          <picture>
+            <source type="image/webp" media="(min-width: 1340px)"
+              srcset="img/index/index-can.webp 1x, img/index/index-can@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)"
+              srcset="img/index/index-can-tablet.webp 1x, img/index/index-can-tablet@2x.webp 2x">
+            <source type="image/webp"
+              srcset="img/index/index-can-mobile.webp 1x, img/index/index-can-mobile@2x.webp 2x">
+            <source media="(min-width: 1340px)" srcset="img/index/index-can.png 1x, img/index/index-can@2x.png 2x">
+            <source media="(min-width: 768px)"
+              srcset="img/index/index-can-tablet.jpg 1x, img/index/index-can-tablet@2x.jpg 2x">
+            <img class="program__img" src="img/index/index-can-mobile.png" srcset="img/index/index-can-mobile@2x.png 2x"
+              width="280" height="270" alt="Cat energy.">
+          </picture>
+          <a class="program__link button" href="form.html">подобрать программу</a>
+        </div>
       </section>
       <section class="nutrition container">
         <h2 class="visually-hidden">Выберите свой курс питания</h2>
@@ -75,14 +81,14 @@
             <p class="nutrition-item__descr">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям?
               Пора на диету! Cat Energy Slim поможет
               вашему питомцу сбросить лишний вес.</p>
-            <a class="nutrition-item__link" href="#">каталог slim</a>
+            <a class="nutrition-item__link" href="slim.html">каталог slim</a>
           </li>
           <li class="nutrition__item nutrition-item">
             <h3 class="nutrition-item__title nutrition-item__title--muscles">набор массы</h3>
             <p class="nutrition-item__descr">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy
               Pro поможет вашему коту нарастить необходимые
               мышцы!</p>
-            <a class="nutrition-item__link" href="#">каталог pro</a>
+            <a class="nutrition-item__link" href="mass.html">каталог pro</a>
           </li>
         </ul>
       </section>
@@ -183,8 +189,8 @@
             <source type="image/webp" srcset="img/footer/map-pin.webp 1x, img/footer/map-pin@2x.webp 2x">
             <source media="(min-width: 768px)"
               srcset="img/footer/map-pin-tablet.png 1x, img/footer/map-pin-tablet@2x.png 2x">
-            <img class="contacts__point" src="img/footer/map-pin.png" srcset="img/footer/map-pin@2x.png 2x"
-              alt="Магазин тут.">
+            <img class="contacts__point" src="img/footer/map-pin.png" srcset="img/footer/map-pin@2x.png 2x" width="57"
+              height="53" alt="Магазин тут.">
           </picture>
         </div>
       </section>
@@ -226,7 +232,7 @@
           </li>
         </ul>
         <div class="footer__copyright copyright">
-          <a class="copyright__link" href="#">
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
             <span class="copyright__link-descr">
               HTML Academy
             </span>
