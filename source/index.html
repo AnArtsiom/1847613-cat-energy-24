@@ -163,10 +163,17 @@
                 <img class="examle__image-after" src="img/index/slider/mobile/after-mobile.png"
                   srcset="img/index/slider/mobile/after-mobile@2x.png 2x" width="280" height="232" alt="Стало.">
               </picture>
+              <picture>
+                <source type="image/webp" media="(min-width: 768px)"
+                  srcset="img/index/slider/image-cat-tablet.webp 1x, img/index/slider/image-cat-tablet@2x.webp 2x">
+                <img class="examle__image-before-after" src="img/index/slider/image-cat-tablet.png"
+                  srcset="img/index/slider/image-cat-tablet@2x.png 2x" width="592" height="511" alt="Слайдер.">
+              </picture>
             </div>
             <div class="example__buttons buttons">
               <button class="buttons__button buttons__button--before">было</button>
               <div class="buttons__scale">
+                <input class="example__slider" type="range" min="1" max="100" value="50">
               </div>
               <button class="buttons__button buttons__button--after">стало</button>
             </div>

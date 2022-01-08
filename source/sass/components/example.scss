@@ -207,7 +207,8 @@
 }
 
 .examle__image-before,
-.examle__image-after {
+.examle__image-after,
+.examle__image-before-after {
   margin: 0 auto 16px;
 
   @media (min-width: $tablet-width) {
@@ -221,76 +222,155 @@
   }
 }
 
-.examle__image-after {
+.examle__image-after,
+.examle__image-before-after {
   display: none;
+}
+
+.examle__image-before {
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.examle__image-before-after {
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
 }
 
 .example__buttons {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  width: 210px;
   align-items: center;
+  margin: 0 auto;
 
   @media (min-width: $tablet-width) {
     justify-content: space-between;
     width: 572px;
-    margin: 0 auto;
   }
 }
 
-.buttons__scale {
-  position: relative;
-  width: 86px;
-  height: 14px;
-  background-color: $white;
-  border: 1px solid $input-hover;
-  border-radius: 6px;
-  margin: 0 10px;
+// .buttons__scale {
+//   position: relative;
+//   width: 86px;
+//   height: 14px;
+//   background-color: $white;
+//   border: 1px solid $input-hover;
+//   border-radius: 6px;
+//   margin: 0 10px;
 
-  &::before {
-    position: absolute;
-    content: "";
-    top: 50%;
-    left: 6px;
-    transform: translateY(-50%);
-    width: 36px;
-    height: 6px;
-    border-radius: 6px;
-    background-color: $basic-green;
-  }
+//   &::before {
+//     position: absolute;
+//     content: "";
+//     top: 50%;
+//     left: 6px;
+//     transform: translateY(-50%);
+//     width: 36px;
+//     height: 6px;
+//     border-radius: 6px;
+//     background-color: $basic-green;
+//   }
+
+//   @media (min-width: $tablet-width) {
+//     width: 426px;
+//     height: 6px;
+//     background-color: rgba(220, 220, 220, 1);
+
+//     &::before {
+//       left: 50%;
+//       width: 34px;
+//       height: 34px;
+//       border-radius: 50%;
+//       background-color: $white;
+//       border: 1px solid $input-hover;
+//       transform: translate(-50%, -50%);
+//     }
+
+//     &::after {
+//       position: absolute;
+//       content: "";
+//       width: 8px;
+//       height: 8px;
+//       background-color: $basic-green;
+//       border-radius: 50%;
+//       left: 50%;
+//       top: 50%;
+//       transform: translate(-50%, -50%);
+//     }
+
+//     &:active {
+//       &::before {
+//         border: 1px solid $basic-green;
+//       }
+//     }
+//   }
+// }
+.buttons__scale {
+  width: 86px;
 
   @media (min-width: $tablet-width) {
     width: 426px;
-    height: 6px;
-    background-color: rgba(220, 220, 220, 1);
-
-    &::before {
-      left: 50%;
-      width: 34px;
-      height: 34px;
-      border-radius: 50%;
-      background-color: $white;
-      border: 1px solid $input-hover;
-      transform: translate(-50%, -50%);
-    }
-
-    &::after {
-      position: absolute;
-      content: "";
-      width: 8px;
-      height: 8px;
-      background-color: $basic-green;
-      border-radius: 50%;
-      left: 50%;
-      top: 50%;
-      transform: translate(-50%, -50%);
-    }
-
-    &:active {
-      &::before {
-        border: 1px solid $basic-green;
-      }
-    }
   }
+}
+
+.example__slider {
+  appearance: none;
+  width: 100%;
+  height: 14px;
+  background-color: $white;
+  border-radius: 6px;
+  outline: none;
+  opacity: 0.7;
+  transition: opacity 0.2s;
+
+  @media (min-width: $tablet-width) {
+    height: 6px;
+    background: $input-hover;
+  }
+}
+
+.example__slider:hover {
+  opacity: 1;
+}
+
+.example__slider::-webkit-slider-thumb {
+  appearance: none;
+  width: 36px;
+  height: 6px;
+  border-radius: 6px;
+  background: $basic-green;
+  cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    border-color: $input-hover;
+    background: $basic-green;
+    border: 12px solid $white;
+  }
+}
+
+.example__slider::-webkit-slider-thumb:active {
+  background-color: $white;
+  border: 1px solid $basic-green;
+}
+
+.example__slider::-moz-range-thumb {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: $basic-green;
+  border-color: $input-hover;
+  border: 12px solid $white;
+  cursor: pointer;
+}
+
+.example__slider::-moz-range-thumb:active {
+  background-color: $white;
+  border: 1px solid $basic-green;
 }
 
 .buttons__button {

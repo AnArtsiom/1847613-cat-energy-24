@@ -18,6 +18,7 @@
 }
 
 .header__logo {
+  width: 80%;
   padding: 10px 20px;
 
   &:hover {
@@ -29,6 +30,7 @@
   }
 
   @media (min-width: $tablet-width) {
+    width: 200px;
     padding: 10px 0;
   }
 
