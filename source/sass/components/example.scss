@@ -347,29 +347,33 @@
     width: 34px;
     height: 34px;
     border-radius: 50%;
-    border-color: $input-hover;
-    background: $basic-green;
-    border: 12px solid $white;
+    background: url("../../img/index/slider/slider-control.png") center;
+    border: 1px solid $input-hover;
   }
 }
 
 .example__slider::-webkit-slider-thumb:active {
-  background-color: $white;
   border: 1px solid $basic-green;
 }
 
 .example__slider::-moz-range-thumb {
-  width: 34px;
-  height: 34px;
-  border-radius: 50%;
+  appearance: none;
+  width: 36px;
+  height: 6px;
+  border-radius: 6px;
   background: $basic-green;
-  border-color: $input-hover;
-  border: 12px solid $white;
   cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    background: url("../../img/index/slider/slider-control.png") center;
+    border: 1px solid $input-hover;
+  }
 }
 
 .example__slider::-moz-range-thumb:active {
-  background-color: $white;
   border: 1px solid $basic-green;
 }
 
