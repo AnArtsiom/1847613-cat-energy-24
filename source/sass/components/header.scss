@@ -7,17 +7,19 @@
   @media (min-width: $tablet-width) {
     flex-direction: row;
     align-items: center;
+    padding: 0 30px;
     min-height: 102px;
   }
 
   @media (min-width: $desktop-width) {
     min-height: 166px;
+    padding: 0 110px;
   }
 }
 
 .header__logo {
-  padding: 10px 0;
   width: 80%;
+  padding: 10px 20px;
 
   &:hover {
     opacity: 0.8;
@@ -28,11 +30,24 @@
   }
 
   @media (min-width: $tablet-width) {
-    width: 30%;
+    width: 200px;
+    padding: 10px 0;
   }
 
   @media (min-width: $desktop-width) {
     padding: 20px 0;
+  }
+}
+
+.header__logo-image {
+  @media (min-width: $tablet-width) {
+    width: 174px;
+    height: 52px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 202px;
+    height: 59px;
   }
 }
 
@@ -44,7 +59,7 @@
 
 .main-nav__toggle {
   position: absolute;
-  top: 16px;
+  top: 20px;
   right: 20px;
   z-index: 2;
   display: block;
@@ -81,7 +96,7 @@
 }
 
 .main-nav--opened .main-nav__toggle {
-  top: 24px;
+  top: 20px;
   right: 20px;
 
   &::before,
@@ -106,7 +121,14 @@
 }
 
 .main-nav__list {
+  position: absolute;
+  width: 100%;
+  background-color: $white;
+  z-index: 100;
+
   @media (min-width: $tablet-width) {
+    position: relative;
+    background-color: transparent;
     display: flex;
     justify-content: space-between;
     align-items: center;
