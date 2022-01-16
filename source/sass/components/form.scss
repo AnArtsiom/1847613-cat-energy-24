@@ -194,11 +194,19 @@
     }
   }
 
-  &:invalid {
+  &:invalid:not(:placeholder-shown) {
     box-shadow: inset 0 0 0 2px $input-error;
 
     ~.form__input-image {
       fill: $input-error;
+    }
+  }
+
+  &:valid:not(:placeholder-shown) {
+    box-shadow: inset 0 0 0 2px $dark-grey;
+
+    ~.form__input-image {
+      fill: $basic-green;
     }
   }
 
