@@ -106,45 +106,45 @@
 
 .advantages__item--leaf {
   &::before {
-    background-image: url("../../img/index/advantages/icon-leaf.svg");
+    background-image: url("../img/index/advantages/icon-leaf.svg");
   }
 
   &::after {
     width: 120px;
-    background-image: url("../../img/index/advantages/icon-one.png");
+    background-image: url("../img/index/advantages/icon-one.png");
   }
 }
 
 .advantages__item--tub {
   &::before {
-    background-image: url("../../img/index/advantages/icon-tub.svg");
+    background-image: url("../img/index/advantages/icon-tub.svg");
   }
 
   &::after {
     width: 136px;
-    background-image: url("../../img/index/advantages/icon-two.png");
+    background-image: url("../img/index/advantages/icon-two.png");
   }
 }
 
 .advantages__item--eat {
   &::before {
-    background-image: url("../../img/index/advantages/icon-eat.png");
+    background-image: url("../img/index/advantages/icon-eat.png");
   }
 
   &::after {
     width: 136px;
-    background-image: url("../../img/index/advantages/icon-three.png");
+    background-image: url("../img/index/advantages/icon-three.png");
   }
 }
 
 .advantages__item--alarm {
   &::before {
-    background-image: url("../../img/index/advantages/icon-alarm.png");
+    background-image: url("../img/index/advantages/icon-alarm.png");
   }
 
   &::after {
     width: 136px;
-    background-image: url("../../img/index/advantages/icon-four.png");
+    background-image: url("../img/index/advantages/icon-four.png");
   }
 }
 
