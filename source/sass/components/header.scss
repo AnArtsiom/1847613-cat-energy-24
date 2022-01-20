@@ -12,8 +12,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    min-height: 166px;
-    padding: 0 110px;
+    min-height: 140px;
+    padding: 25px 110px 0;
   }
 }
 
@@ -141,12 +141,20 @@
   }
 }
 
+.main-nav--nojs .main-nav__list {
+  position: relative;
+}
+
+.main-nav--nojs .menu__item {
+  display: block;
+}
+
 .menu__item {
   position: relative;
 }
 
 .menu__link {
-  font-family: "Oswald Medium", sans-serif;
+  font-family: "Oswald Medium", "Arial", sans-serif;
   font-size: 20px;
   line-height: 20px;
   color: $black;

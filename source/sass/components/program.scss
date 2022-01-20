@@ -35,10 +35,10 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 58px;
+    padding-top: 82px;
     padding-left: 80px;
     min-height: 553px;
-    margin-bottom: 58px;
+    margin-bottom: 84px;
   }
 }
 
@@ -60,7 +60,7 @@
 }
 
 .program__text {
-  font-family: "Oswald Regular", sans-serif;
+  font-family: "Oswald Regular", "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -100,11 +100,12 @@
     left: 50%;
     top: 0;
     transform: translateX(-30%);
+    z-index: 0;
   }
 }
 
 .program__link {
-  font-family: "Oswald Regular", sans-serif;
+  font-family: "Oswald Regular", "Arial", sans-serif;
   font-size: 14px;
   line-height: 18px;
   text-align: center;

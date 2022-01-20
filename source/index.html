@@ -125,7 +125,7 @@
               Slim.
               Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16
               часов в день.</p>
-            <div class="price__wrapper">
+            <div class="example-price">
               <ul class="example__list">
                 <li class="example__item item-example">
                   <p class="item-example__value">5 КГ</p>
@@ -141,8 +141,8 @@
               </p>
             </div>
           </div>
-          <div class="examle__slider-wrapper">
-            <div class="examle__image-wrapper">
+          <div class="example__slider-wrapper">
+            <div class="example__image-wrapper">
               <picture>
                 <source type="image/webp" media="(min-width: 768px)"
                   srcset="img/index/slider/cat-fat.webp 1x, img/index/slider/cat-fat@2x.webp 2x">
@@ -150,7 +150,7 @@
                   srcset="img/index/slider/mobile/before-mobile.webp 1x, img/index/slider/mobile/before-mobile@2x.webp 2x">
                 <source media="(min-width: 768px)"
                   srcset="img/index/slider/cat-fat.png 1x, img/index/slider/cat-fat@2x.png 2x">
-                <img class="examle__image-before" src="img/index/slider/mobile/before-mobile.png"
+                <img class="example__image-before" src="img/index/slider/mobile/before-mobile.png"
                   srcset="img/index/slider/mobile/before-mobile@2x.png 2x" width="280" height="232" alt="Было.">
               </picture>
               <picture>
@@ -160,13 +160,13 @@
                   srcset="img/index/slider/mobile/after-mobile.webp 1x, img/index/slider/mobile/after-mobile@2x.webp 2x">
                 <source media="(min-width: 768px)"
                   srcset="img/index/slider/cat-skinny.png 1x, img/index/slider/cat-skinny@2x.png 2x">
-                <img class="examle__image-after" src="img/index/slider/mobile/after-mobile.png"
+                <img class="example__image-after" src="img/index/slider/mobile/after-mobile.png"
                   srcset="img/index/slider/mobile/after-mobile@2x.png 2x" width="280" height="232" alt="Стало.">
               </picture>
               <picture>
                 <source type="image/webp" media="(min-width: 768px)"
                   srcset="img/index/slider/image-cat-tablet.webp 1x, img/index/slider/image-cat-tablet@2x.webp 2x">
-                <img class="examle__image-before-after" src="img/index/slider/image-cat-tablet.png"
+                <img class="example__image-before-after" src="img/index/slider/image-cat-tablet.png"
                   srcset="img/index/slider/image-cat-tablet@2x.png 2x" width="592" height="511" alt="Слайдер.">
               </picture>
             </div>
@@ -183,13 +183,27 @@
       <section class="contacts">
         <h2 class="visually-hidden">Контакты</h2>
         <div class="contacts__header">
-          <p class="contacts__cooperation">приглашаем к сотрудничеству дилеров!</p>
-          <p class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+          <p class="contacts__cooperation">приглашаем<br> к сотрудничеству дилеров!</p>
+          <p class="contacts__address">ул. Большая Конюшенная, д. 19/8
+            <span class="contacts__address-span">Санкт-Петербург</span>
+          </p>
         </div>
         <div class="contacts__map">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6081599853571!2d30.32077288498873!3d59.938643928032285!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1639219487968!5m2!1sru!2sru"
-            width="320" height="362" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            width="320" height="362" style="border:0;" allowfullscreen="" loading="lazy">
+            <picture>
+              <source type="image/webp" media="(min-width: 1440px)"
+                srcset="img/map/map-desktop.webp 1x, img/map/map-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)"
+                srcset="img/map/map-tablet.webp 1x, img/map/map-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/map/map-mobile.webp 1x, img/map/map-mobile@2x.webp 2x">
+              <source media="(min-width: 1440px)" srcset="img/map/map-desktop.jpg 1x, img/map/map-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/map/map-tablet.jpg 1x, img/map/map-tablet@2x.jpg 2x">
+              <img class="contacts__map-image" src="img/map/map-mobile.jpg" srcset="img/map/map-mobile@2x.jpg 2x"
+                width="320" height="362" alt="Карта.">
+            </picture>
+          </iframe>
           <picture>
             <source type="image/webp" media="(min-width: 768px)"
               srcset="img/footer/map-pin-tablet.webp 1x, img/footer/map-pin@2x.webp 2x">
@@ -212,7 +226,7 @@
           </svg>
           <span class="visually-hidden">Cat energy</span>
         </a>
-        <ul class="social__list">
+        <ul class="footer__social-list social">
           <li class="social__item">
             <a class="social__link social__link--vk" href="#">
               <svg class="social__link-icon" width="23" height="16">

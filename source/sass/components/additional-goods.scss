@@ -12,10 +12,10 @@
 }
 
 .additional-goods__wrapper {
-  margin-bottom: 32px;
+  margin-bottom: 37px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 72px;
+    margin-bottom: 53px;
   }
 
   @media (min-width: $desktop-width) {
@@ -58,13 +58,17 @@
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: 320px 250px 80px 243px;
-    padding: 0 0 14px;
+    padding: 0 0 15px;
     margin-bottom: 0;
+
+    &:nth-child(1) {
+      padding-top: 3px;
+    }
   }
 }
 
 .additional-goods__subtitle {
-  font-family: "Oswald Regular", sans-serif;
+  font-family: "Oswald Regular", "Arial", sans-serif;
   font-size: 16px;
   line-height: 16px;
   color: rgba(34, 34, 34, 1);
@@ -104,6 +108,7 @@
   @media (min-width: $desktop-width) {
     margin-left: 0;
     width: 240px;
+    padding-left: 6px;
   }
 }
 
@@ -155,7 +160,8 @@
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
-    padding: 56px 124px 69px 76px;
+    justify-content: space-between;
+    padding: 61px 124px 60px 76px;
     background-image: url("../img/catalog/catalog-tablet/catalog-background-tablet.png");
 
     @media (min-resolution: 2dppx) {
@@ -179,7 +185,7 @@
   margin: 0 0 48px;
 
   @media (min-width: $tablet-width) {
-    margin: 0 265px 0 0;
+    margin: 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -193,4 +199,9 @@
   color: $white;
   text-align: center;
   width: 180px;
+
+  @media (min-width: $tablet-width) {
+    text-align: left;
+    padding-left: 20px;
+  }
 }

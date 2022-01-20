@@ -3,9 +3,9 @@ document.addEventListener("DOMContentLoaded", () => {
   let navToggle = document.querySelector('.main-nav__toggle');
   const btnBefore = document.querySelector('.buttons__button--before');
   const btnAfter = document.querySelector('.buttons__button--after');
-  const sliderImgBefore = document.querySelector('.examle__image-before');
-  const sliderImgAfter = document.querySelector('.examle__image-after');
-  const sliderImgBeforeAfter = document.querySelector('.examle__image-before-after');
+  const sliderImgBefore = document.querySelector('.example__image-before');
+  const sliderImgAfter = document.querySelector('.example__image-after');
+  const sliderImgBeforeAfter = document.querySelector('.example__image-before-after');
   const slider = document.querySelector('.example__slider');
 
   navMain.classList.remove('main-nav--nojs');

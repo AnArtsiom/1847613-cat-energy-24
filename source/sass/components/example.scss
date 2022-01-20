@@ -11,6 +11,7 @@
     display: grid;
     grid-template-columns: 1fr 2fr;
     grid-column-gap: 193px;
+    padding-bottom: 30px;
   }
 }
 
@@ -67,7 +68,7 @@
 .example__list {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 5px;
+  margin-bottom: 11px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 64px;
@@ -108,9 +109,10 @@
   @media (min-width: $tablet-width) {
     font-size: 30px;
     line-height: 37px;
+    padding: 15px 10px;
   }
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $desktop-width) {
     padding: 18px 10px;
   }
 }
@@ -140,7 +142,7 @@
 }
 
 .example__total {
-  font-family: "Oswald Regular", sans-serif;
+  font-family: "Oswald Regular", "Arial", sans-serif;
   font-size: 14px;
   line-height: 20px;
   text-transform: uppercase;
@@ -157,13 +159,14 @@
   @media (min-width: $desktop-width) {
     width: 436px;
     text-align: left;
+    padding-top: 6px;
   }
 }
 
 .example__total-value {
   @media (min-width: $tablet-width) {
     display: inline-block;
-    margin-top: 5px;
+    margin-top: 9px;
   }
 
   @media (min-width: $desktop-width) {
@@ -171,7 +174,7 @@
   }
 }
 
-.examle__slider-wrapper {
+.example__slider-wrapper {
   position: relative;
   padding-bottom: 40px;
 
@@ -203,12 +206,17 @@
 
   @media (min-width: $desktop-width) {
     align-self: center;
+
+    &::before,
+    &::after {
+      height: 478px;
+    }
   }
 }
 
-.examle__image-before,
-.examle__image-after,
-.examle__image-before-after {
+.example__image-before,
+.example__image-after,
+.example__image-before-after {
   margin: 0 auto 16px;
 
   @media (min-width: $tablet-width) {
@@ -222,18 +230,18 @@
   }
 }
 
-.examle__image-after,
-.examle__image-before-after {
+.example__image-after,
+.example__image-before-after {
   display: none;
 }
 
-.examle__image-before {
+.example__image-before {
   @media (min-width: $tablet-width) {
     display: none;
   }
 }
 
-.examle__image-before-after {
+.example__image-before-after {
   @media (min-width: $tablet-width) {
     display: block;
   }
@@ -248,65 +256,10 @@
 
   @media (min-width: $tablet-width) {
     justify-content: space-between;
-    width: 572px;
+    width: 583px;
   }
 }
 
-// .buttons__scale {
-//   position: relative;
-//   width: 86px;
-//   height: 14px;
-//   background-color: $white;
-//   border: 1px solid $input-hover;
-//   border-radius: 6px;
-//   margin: 0 10px;
-
-//   &::before {
-//     position: absolute;
-//     content: "";
-//     top: 50%;
-//     left: 6px;
-//     transform: translateY(-50%);
-//     width: 36px;
-//     height: 6px;
-//     border-radius: 6px;
-//     background-color: $basic-green;
-//   }
-
-//   @media (min-width: $tablet-width) {
-//     width: 426px;
-//     height: 6px;
-//     background-color: rgba(220, 220, 220, 1);
-
-//     &::before {
-//       left: 50%;
-//       width: 34px;
-//       height: 34px;
-//       border-radius: 50%;
-//       background-color: $white;
-//       border: 1px solid $input-hover;
-//       transform: translate(-50%, -50%);
-//     }
-
-//     &::after {
-//       position: absolute;
-//       content: "";
-//       width: 8px;
-//       height: 8px;
-//       background-color: $basic-green;
-//       border-radius: 50%;
-//       left: 50%;
-//       top: 50%;
-//       transform: translate(-50%, -50%);
-//     }
-
-//     &:active {
-//       &::before {
-//         border: 1px solid $basic-green;
-//       }
-//     }
-//   }
-// }
 .buttons__scale {
   width: 86px;
 
@@ -378,7 +331,7 @@
 }
 
 .buttons__button {
-  font-family: "Oswald Regular", sans-serif;
+  font-family: "Oswald Regular", "Arial", sans-serif;
   font-size: 16px;
   text-align: center;
   text-transform: uppercase;

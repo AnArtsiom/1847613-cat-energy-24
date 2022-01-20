@@ -3,26 +3,27 @@
 }
 
 .catalog__list {
-  margin-bottom: 34px;
+  margin-bottom: 26px;
 
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 60px;
     row-gap: 140px;
-    margin-bottom: 66px;
+    margin-bottom: 70px;
   }
 
   @media (min-width: $desktop-width) {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     column-gap: 80px;
-    margin-bottom: 74px;
+    row-gap: 145px;
+    margin-bottom: 79px;
   }
 }
 
 .catalog__title {
   padding-top: 27px;
-  padding-bottom: 37px;
+  padding-bottom: 38px;
   border-top: 1px solid rgba(235, 235, 235, 1);
   border-bottom: 1px solid rgba(235, 235, 235, 1);
   color: $black;
@@ -35,7 +36,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 22px;
+    padding-top: 44px;
+    margin-bottom: 167px;
   }
 }
 
@@ -86,7 +88,7 @@
 }
 
 .cards__item {
-  padding: 0 0 18px;
+  padding: 0 0 22px;
   border-bottom: 1px solid rgba(235, 235, 235, 1);
 
   @media (min-width: $tablet-width) {
@@ -96,7 +98,7 @@
   }
 }
 
-.product__composition {
+.card__composition {
   flex: 1 0 50%;
   padding: 22px 0;
 
@@ -114,12 +116,12 @@
 }
 
 .product__title {
-  font-family: "Oswald Regular", sans-serif;
+  font-family: "Oswald Regular", "Arial", sans-serif;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
   color: rgba(34, 34, 34, 1);
-  margin-bottom: 18px;
+  margin-bottom: 14px;
   width: 76px;
 
   @media (min-width: $tablet-width) {
@@ -157,7 +159,7 @@
   }
 }
 
-.product__block-button {
+.card__button {
   width: 100%;
 
   @media (min-width: $tablet-width) {
@@ -166,10 +168,10 @@
   }
 }
 
-.product__item-link {
+.block-button__link {
   display: block;
   background-color: $basic-green;
-  font-family: "Oswald Regular", sans-serif;
+  font-family: "Oswald Regular", "Arial", sans-serif;
   font-size: 16px;
   line-height: 20px;
   color: $white;
@@ -191,19 +193,21 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-bottom: 25px;
 
   @media (min-width: $tablet-width) {
-    padding: 50px 38px 38px;
     border: 2px solid $basic-grey;
     width: 324px;
+    padding: 0 75px;
   }
 
   @media (min-width: $desktop-width) {
     width: 245px;
+    padding: 0 40px;
   }
 }
 
-.card-show__link--more {
+.card-show__link-more {
   position: relative;
 
   &::before {
@@ -232,13 +236,13 @@
     &::before,
     &::after {
       width: 60px;
-      top: 32px;
+      top: 83px;
     }
   }
 }
 
-.card-show__text--more {
-  font-family: "Oswald Regular", sans-serif;
+.card-show__text-more {
+  font-family: "Oswald Regular", "Arial", sans-serif;
   font-size: 16px;
   line-height: 20px;
   color: $black;
@@ -248,14 +252,14 @@
   padding-top: 78px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 113px;
+    padding-top: 163px;
     margin-bottom: 23px;
     font-size: 20px;
     line-height: 22px;
   }
 }
 
-.card-show__text--small {
+.card-show__text-small {
   font-size: 12px;
   line-height: 16px;
   text-align: center;
@@ -277,7 +281,7 @@
   display: block;
   width: 100%;
   background-color: rgba(242, 242, 242, 1);
-  font-family: "Oswald Regular", sans-serif;
+  font-family: "Oswald Regular", "Arial", sans-serif;
   font-size: 16px;
   line-height: 20px;
   color: $dark-grey;
