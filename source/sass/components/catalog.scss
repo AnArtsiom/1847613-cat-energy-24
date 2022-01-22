@@ -239,6 +239,13 @@
       top: 83px;
     }
   }
+
+  @media (min-width: $desktop-width) {
+    &::before,
+    &::after {
+      top: 80px;
+    }
+  }
 }
 
 .card-show__text-more {
@@ -256,6 +263,10 @@
     margin-bottom: 23px;
     font-size: 20px;
     line-height: 22px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 160px;
   }
 }
 

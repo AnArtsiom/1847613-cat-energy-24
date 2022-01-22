@@ -57,7 +57,7 @@
   }
 }
 
-.price__wrapper {
+.example-price {
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
@@ -109,7 +109,6 @@
   @media (min-width: $tablet-width) {
     font-size: 30px;
     line-height: 37px;
-    padding: 15px 10px;
   }
 
   @media (min-width: $desktop-width) {
